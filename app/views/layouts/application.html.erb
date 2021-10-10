@@ -11,11 +11,8 @@
   </head>
 
   <body>
-    <% if flash[:notice] %>
-      <p><%= notice %></p>
-    <% end %>
-    <% if flash[:alert] %>
-      <p><%= alert %></p>
+    <% flash.each do |type, message| %>
+      <%= content_tag :p, message, class: type %>
     <% end %>
     <nav style="margin-bottom: 10px;">
       <%= link_to 'Kittens', kittens_path %>
