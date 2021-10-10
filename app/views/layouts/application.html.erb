@@ -11,9 +11,15 @@
   </head>
 
   <body>
-  <nav style="margin-bottom: 10px;">
-    <%= link_to 'Kittens', kittens_path %>
-  </nav>
+    <% if flash[:notice] %>
+      <p><%= notice %></p>
+    <% end %>
+    <% if flash[:alert] %>
+      <p><%= alert %></p>
+    <% end %>
+    <nav style="margin-bottom: 10px;">
+      <%= link_to 'Kittens', kittens_path %>
+    </nav>
     <%= yield %>
   </body>
 </html>

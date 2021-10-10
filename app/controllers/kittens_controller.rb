@@ -15,9 +15,9 @@ class KittensController < ApplicationController
   def create
     @kitten = Kitten.new(kitten_params)
     if @kitten.save
-      redirect_to @kitten
+      redirect_to @kitten, notice: "Kitten successfully created!"
     else
-      render :new
+      render :new, alert: "Error! Please try creating kitten again."
     end
   end
 
@@ -26,9 +26,9 @@ class KittensController < ApplicationController
 
   def update
     if @kitten.update(kitten_params)
-      redirect_to @kitten
+      redirect_to @kitten, notice: "Kitten succesfully updated."
     else
-      render :index
+      render :index, alert: "Error! Please try editing kitten again."
     end
   end
 
