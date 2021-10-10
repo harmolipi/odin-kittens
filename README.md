@@ -1,24 +1,18 @@
-# README
+# Kittens API
+Created as part of [The Odin Project](https://www.theodinproject.com) curriculum.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+View on [Github](https://github.com/harmolipi/odin-kittens).
 
-Things you may want to cover:
+### Functionality
 
-* Ruby version
+This is the [Kittens API](https://www.theodinproject.com/paths/full-stack-ruby-on-rails/courses/ruby-on-rails/lessons/private-events) project, where I practice building a simple API by making a site for adding kittens and retrieving their info as either HTML or JSON.
 
-* System dependencies
+### Thoughts
 
-* Configuration
+This was a very simple project, and how easy Rails makes it to add API capabilities. Most of the project involved the same types of things I've worked on in past projects, and the new part (adding the ability to return info as JSON) only took a few seconds with `respond_to`.
 
-* Database creation
+Because that was the main focus of this project, I didn't take the time to add any styling. If I ever decide I'd really like a more sophisticated kittens app, I'll return to it and flesh it out more nicely in the future.
 
-* Database initialization
+God bless.
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+-Niko Birbilis
