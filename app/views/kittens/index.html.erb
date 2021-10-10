@@ -1,0 +1,15 @@
+<% if @kittens %>
+  <ul>
+    <% @kittens.each do |kitten| %>
+      <li><%= link_to kitten.name, kitten_path(kitten) %>
+      <ul>
+        <li>Age: <%= kitten.age %></li>
+        <li>Cuteness: <%= kitten.cuteness %></li>
+        <li>Softness: <%= kitten.softness %></li>
+      </ul>
+    </li>
+      <% end %> 
+  </ul>
+<% end %>
+
+<%# show list of kittens with each name linking to that kitten's show page %>
