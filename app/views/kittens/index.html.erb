@@ -1,3 +1,5 @@
+<%= link_to 'New kitten', new_kitten_path %>
+
 <% if @kittens %>
   <ul>
     <% @kittens.each do |kitten| %>
@@ -11,5 +13,3 @@
       <% end %> 
   </ul>
 <% end %>
-
-<%# show list of kittens with each name linking to that kitten's show page %>
