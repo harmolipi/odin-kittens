@@ -3,13 +3,9 @@
 <% if @kittens %>
   <ul>
     <% @kittens.each do |kitten| %>
-      <li><%= link_to kitten.name, kitten_path(kitten) %>
-      <ul>
-        <li>Age: <%= kitten.age %></li>
-        <li>Cuteness: <%= kitten.cuteness %></li>
-        <li>Softness: <%= kitten.softness %></li>
-      </ul>
-    </li>
-      <% end %> 
+      <li><%= link_to kitten.name, kitten_path(kitten) %> (<%= link_to 'Delete', kitten_path(kitten), method: :delete %>)
+      <%= render 'display_kitten', kitten: kitten %>
+      </li>
+    <% end %> 
   </ul>
 <% end %>
