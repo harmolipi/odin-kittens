@@ -5,3 +5,20 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+Kitten.destroy_all
+
+Kitten.create([
+  {
+    name: 'Mumford',
+    age: 2,
+    cuteness: 9,
+    softness: 7
+  },
+  {
+    name: 'Cosmo',
+    age: 46,
+    cuteness: 8,
+    softness: 2
+  }
+])
